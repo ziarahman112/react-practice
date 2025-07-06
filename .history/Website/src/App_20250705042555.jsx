@@ -1,0 +1,18 @@
+import Header from './Header';
+import Footer from './Footer';
+import Card from './Card';
+import Sinks from './sinks';
+function App() {
+return (
+<Router>
+<Header></Header>
+<Routes>
+        <Route path="/" element={<Card />} />
+        <Route path="/sinks" element={<Sinks />} />
+      </Routes>
+<Footer></Footer>
+</Router>
+)
+}
+
+export default App

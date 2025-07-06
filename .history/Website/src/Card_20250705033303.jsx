@@ -1,0 +1,19 @@
+import sink from './assets/sink.jpeg';
+
+
+function Card(){
+
+
+let b = function() {
+window.location.href = "https://www.google.com/search?q=sinks&tbm=shop"; // Redirects to Google search for sinks
+}
+    return(
+        <div className="card">
+            <img className='card-image' src = {sink} alt ="Sinks"></img>
+            <h2 className='card-title'> Sinks</h2>
+            <p className='card-p'>Find all the sinks in the market ranging from all shapes and sizes click the button to find out more</p>
+            <button id="button" className='class-button' onClick = {b} >Go To  </button>
+        </div>
+    );
+}
+export default Card;
