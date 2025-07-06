@@ -1,0 +1,14 @@
+#title{
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  
+}
+
+#nav{
+  display: flex;
+
+  gap: 20px;
+  margin-top: 20px;
+}
+

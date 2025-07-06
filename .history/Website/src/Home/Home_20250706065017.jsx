@@ -1,0 +1,112 @@
+import sink from '../assets/sink.jpeg';
+import basin from '../assets/bathroom basin.jpeg';
+import toilet from '../assets/toilet.jpeg';
+import baths from '../assets/bath.jpeg';
+import radiator from '../assets/radiator.jpeg';
+// import shower from '../assets/shower.jpeg';
+import boiler from '../assets/boiler.jpeg';
+import taps from '../assets/tap.jpeg';
+import showerEnclosure from '../assets/Shower enclosure.jpeg';
+import Header from '../components/Header';
+import sinks from '../sink/sinks';
+import { useNavigate } from 'react-router-dom';
+import styles from './Home.module.css';
+import Bath from '../Bath/Bath';
+
+
+
+
+function Home(){
+const navigate = useNavigate();
+
+let b;
+
+let Tap = function() {
+    navigate('/taps');
+}
+
+let Boiler = function() {
+    navigate('/boiler');
+}
+
+let bath = function() {
+    navigate('/Bath');
+}
+
+let sinks = function() {
+    navigate('/sinks');
+ 
+}
+let shower = function() {
+    navigate('/Shower');
+}
+
+let Toilet = function() {
+    navigate('/toilet');
+}
+
+let Radiator = function() {
+    navigate('/radiator');
+}
+
+    return (
+        <header>
+            <h1 className="">Welcome to Plumbzone</h1>
+
+            <div>
+                <div className={styles.card}>
+                    <img className="card-image" src={basin} alt="Bathroom Basin" />
+                    <h2 className="card-title">Bathroom Basins</h2>
+            <p className='card-p'>Find all the sinks in the market ranging from all shapes and sizes click the button to find out more</p>
+            <button  className={styles.Button} onClick = {sinks} >Go To  </button>
+        </div>
+
+        <div className={styles.card}>
+            <img className='card-image' src = {showerEnclosure} alt ="Shower Enclosure"></img>
+            <h2 className='card-title'> Shower Enclosuers</h2>
+            <p className='card-p'>Find all the sinks in the market ranging from all shapes and sizes click the button to find out more</p>
+            <button className={styles.Button} onClick = {shower} >Go To  </button>
+        </div>
+
+        <div className={styles.card}>
+            <img className='card-image' src = {toilet} alt ="Toilets"></img>
+            <h2 className='card-title'> Toilets</h2>
+            <p className='card-p'>Find all the sinks in the market ranging from all shapes and sizes click the button to find out more</p>
+            <button  className={styles.Button} onClick = {Toilet} >Go To  </button>
+        </div>
+
+        <div className={styles.card}>
+            <img className='card-image' src = {baths} alt ="BathTubs"></img>
+            <h2 className='card-title'> Baths</h2>
+            <p className='card-p'>Find all the sinks in the market ranging from all shapes and sizes click the button to find out more</p>
+            <button  className={styles.Button} onClick = {bath} >Go To  </button>
+        </div>
+
+
+        <div className={styles.card}>
+            <img className='card-image' src = {taps} alt ="Bathroom Taps"></img>
+            <h2 className='card-title'> Bathroom Taps</h2>
+            <p className='card-p'>Find all the sinks in the market ranging from all shapes and sizes click the button to find out more</p>
+            <button className={styles.Button} onClick = {Tap} >Go To  </button>
+        </div>
+
+        <div className={styles.card}>
+            <img className='card-image' src = {boiler} alt ="Boilers"></img>
+            <h2 className='card-title'> Boilers</h2>
+            <p className='card-p'>Find all the sinks in the market ranging from all shapes and sizes click the button to find out more</p>
+            <button className={styles.Button} onClick = {Boiler} >Go To  </button>
+        </div>
+
+        <div className={styles.card}>
+            <img className='card-image' src = {radiator} alt ="Bathroom Radiators"></img>
+            <h2 className='card-title'> Bathroom Radiators</h2>
+            <p className='card-p'>Find all the sinks in the market ranging from all shapes and sizes click the button to find out more</p>
+            <button className={styles.Button} onClick = {Radiator} >Go To  </button>
+        </div>
+
+        </div>
+        </header>
+        
+    );
+}
+export default Home;

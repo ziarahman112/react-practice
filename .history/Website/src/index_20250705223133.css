@@ -1,0 +1,28 @@
+#title{
+  font-size: 1.5em;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  display: flex;
+  border: 2px solid hsl(0, 4%, 91%);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: hsl(0, 1%, 98%);
+  color: hsl(0, 1%, 20%);
+  font-weight: bold;
+  max-width: fit-content;
+ 
+  
+}
+
+#nav{
+  display: flex;
+
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.header-c{
+
+  border: 2px solid hsl(0, 1%, 71%);
+}
