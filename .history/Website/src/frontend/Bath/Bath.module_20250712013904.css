@@ -1,0 +1,43 @@
+ body{
+    align-content: center;
+    text-align: center;
+    background-color: hsl(0, 1%, 96%);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.showerbaths{
+  border: 1px solid hsl(0, 1%, 71%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsl(0, 1%, 71%);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    max-width: min-content;
+    max-height: min-content;
+    display: inline-block;
+}
+.showerbath{
+  border: 1px solid hsl(0, 1%, 71%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    max-width: 200px;
+    max-height: min-content;
+    display: inline-block;
+}
+
+
+.showerbath .rating{
+    font-size: 1em;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+.showebath .inStock{
+    font-size: 0.9em;
+    color: hsl(128, 97%, 29%);
+    font-style: italic;
+    margin-top: 5px;
+    display: inline-block;}

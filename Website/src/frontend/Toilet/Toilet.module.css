@@ -1,0 +1,33 @@
+
+
+.toilet{
+  border: 1px solid hsl(0, 1%, 71%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsl(0, 1%, 71%);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    max-width: max-content;
+    max-height: max-content;
+    display: inline-block;
+}
+
+.toilet .toiletImage{
+  width: 200px;
+  height: 200px;
+}
+
+.toilet .rating{
+    font-size: 1em;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+.toilet .inStock{
+    font-size: 0.9em;
+    color: hsl(128, 97%, 29%);
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 5px;
+    display: inline-block;}

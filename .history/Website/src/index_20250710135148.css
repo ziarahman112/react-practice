@@ -1,0 +1,57 @@
+#title a {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: left;
+  margin: auto;
+  border: 10px solid hsla(0, 100%, 100%, 0);
+  max-width: fit-content;
+  align-content: start;
+  text-decoration: none;
+  color: hsl(0, 0%, 10%); /* choose your preferred color */
+  font-family: Arial, sans-serif;
+}
+
+/* Remove default link colors for all states */
+#title a:link,
+#title a:visited,
+#title a:hover,
+#title a:active {
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+}
+
+
+#nav{
+  display: flex;
+  justify-content: center; /* centers the nav list horizontally */
+  background-color: #f5f5f5; /* optional: background for nav bar */
+  padding: 1rem 0; /* optional: spacing inside the navbar */
+  border: 1px solid hsl(0, 1%, 71%);
+}
+
+
+
+#nav-list {
+  list-style: none; 
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  display: flex; 
+  gap: 2rem; 
+  padding: 0;
+  margin: 0;
+  color: hsl(0, 1%, 20%);
+  font-style: italic;
+  font-family: Arial, sans-serif;
+}
+
+#nav-list li a {
+  text-decoration: none;
+  color: hsl(0, 1%, 20%);
+  transition: color 0.3s ease;
+}
+
+#nav-list li a:hover {
+  color: hsl(0, 1%, 40%); 
+}
