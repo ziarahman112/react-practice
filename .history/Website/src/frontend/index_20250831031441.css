@@ -1,0 +1,96 @@
+/* ===== Header (Title + Account) ===== */
+#header {
+  display: flex;
+  justify-content: flex-start; /* Left align */
+  align-items: center; /* Vertical center */
+  padding: 10px 20px;
+  position: fixed; /* Pin to top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Header background */
+  border-bottom: 1px solid hsl(0, 1%, 71%);
+  z-index: 1000; /* Stay above other content */
+}
+
+/* Title link styling */
+#title a {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+  font-family: Arial, sans-serif;
+  margin-right: 10px; /* Space between title and icon */
+}
+
+/* Remove default link styles */
+#title a:link,
+#title a:visited,
+#title a:hover,
+#title a:active {
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+}
+
+/* Account image next to title */
+#account img {
+  width: 25px;  /* Small icon */
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ===== Nav Bar ===== */
+#nav {
+  display: flex;
+  justify-content: center; /* Center nav items horizontally */
+  background-color: #f5f5f5;
+  padding: 1rem 0;
+  border-bottom: 1px solid hsl(0, 1%, 71%);
+  margin-top: 60px; /* Space below fixed header */
+  position: relative; /* Keep in normal flow */
+  z-index: 900;
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Space between links */
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  font-style: italic;
+  font-family: Arial, sans-serif;
+}
+
+#nav-list li a {
+  text-decoration: none;
+  color: hsl(0, 1%, 20%);
+  transition: color 0.3s ease;
+}
+
+#nav-list li a:hover {
+  color: hsl(0, 1%, 40%);
+}
+
+/* ===== Search ===== */
+.search .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.search .Button {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  border: 1px solid hsl(0, 0%, 0%);
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}

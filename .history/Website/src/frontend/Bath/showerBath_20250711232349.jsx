@@ -1,0 +1,9 @@
+
+function showerBath () {
+    return(
+        <header>
+            <h1>Shower Baths</h1>
+        </header>
+    )
+}
+export default showerBath;

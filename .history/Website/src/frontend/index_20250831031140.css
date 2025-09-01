@@ -1,0 +1,31 @@
+/* Header container to hold title + account image */
+#header {
+  display: flex;
+  justify-content: flex-start; /* Keep items on the left */
+  align-items: center; /* Align vertically */
+  padding: 10px 20px;
+  position: fixed; /* Pin to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Optional: navbar background */
+  border-bottom: 1px solid hsl(0, 1%, 71%);
+  z-index: 1000; /* Keep above other elements */
+}
+
+#title a {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+  font-family: Arial, sans-serif;
+  margin-right: 10px; /* Space between title and icon */
+}
+
+/* Account section next to title */
+#account img {
+  width: 20px;  /* Small size */
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
