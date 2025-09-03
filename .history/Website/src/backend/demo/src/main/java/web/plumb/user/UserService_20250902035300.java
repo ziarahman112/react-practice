@@ -1,0 +1,26 @@
+package web.plumb.user;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+
+        private UserRepository userRepository;
+
+        @Autowired
+        public UserService(UserRepository userRepository) {
+                this.userRepository = userRepository;
+        }
+
+        public List<UserModel> getUser() {
+                return userRepository.findAll();
+
+        }
+
+        public void addNewUser(UserModel user) {
+                userRepository.save(user);
+        }
+}

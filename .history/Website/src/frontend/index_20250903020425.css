@@ -1,0 +1,103 @@
+#container {
+  display: flex;
+  justify-content: center;   /* Centers the title */
+  align-items: center;
+  position: relative;        /* Needed for absolute positioning */
+  width: 100%;
+  height: 60px;              /* Optional header height */
+}
+
+/* Title perfectly centered */
+#title a {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+  font-family: Arial, sans-serif;
+  z-index: 1;                /* Keep above input/button */
+}
+
+/* Group input and button on far left */
+#input, #Button {
+  position: absolute;
+  top: 50%;                  /* Vertically center */
+  transform: translateY(-50%);
+}
+
+#input {
+  background-color: #ccccccc3;
+  left: 10px; 
+  max-width: 500px;               /* Far left */
+  padding: 8px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  color: black;
+}
+
+#Button {
+  left: 220px;               /* Adjust based on input width */
+  padding: 8px 12px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+}
+
+#Button:hover {
+  background-color: hsl(0, 1%, 60%);
+}
+
+#accountB {
+ position: absolute;
+ font-weight: bold;
+ background-color: white;
+ right: 10px;
+ margin-right: 100px;
+}
+
+/* Remove default link colors for all states */
+#title a:link,
+#title a:visited,
+#title a:hover,
+#title a:active {
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+}
+
+
+#nav{
+  display: flex;
+  justify-content: center; /* centers the nav list horizontally */
+  background-color: #f5f5f5; /* optional: background for nav bar */
+  padding: 1rem 0; /* optional: spacing inside the navbar */
+  border: 1px solid hsl(0, 1%, 71%);
+}
+
+
+
+#nav-list {
+  list-style: none; 
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  display: flex; 
+  gap: 2rem; 
+  padding: 0;
+  margin: 0;
+  color: hsl(0, 1%, 20%);
+  font-style: italic;
+  font-family: Arial, sans-serif;
+}
+
+#nav-list li a {
+  text-decoration: none;
+  color: hsl(0, 1%, 20%);
+  transition: color 0.3s ease;
+}
+
+#nav-list li a:hover {
+  color: hsl(0, 1%, 40%); 
+}
+
