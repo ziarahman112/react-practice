@@ -1,0 +1,14 @@
+.form{
+  display: flex;
+    flex-direction:column;
+    width: 300px;
+   margin: auto;
+}
+.name{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  width: 300px;
+  margin: auto;
+  justify-content: space-between;
+}

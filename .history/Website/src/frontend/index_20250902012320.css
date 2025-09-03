@@ -1,0 +1,92 @@
+#container {
+  display: flex;
+  justify-content: center;  /* Centers the title */
+  align-items: center;
+  position: relative;       /* Needed for absolute positioning of search */
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Title perfectly centered */
+#title a {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+  font-family: Arial, sans-serif;
+}
+
+/* Search bar on the far left */
+#search {
+  position: absolute;
+  left: 0;                  /* Far left corner */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-left: 20px;       /* Optional padding from the very edge */
+}
+
+#input {
+  font-weight: bold;
+  border: 1px solid #ccc; 
+  padding: 8px;
+}
+
+#Button {
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  background: white;
+}
+
+#Button:hover {
+  background-color: hsl(0, 1%, 60%);
+}
+
+
+/* Remove default link colors for all states */
+#title a:link,
+#title a:visited,
+#title a:hover,
+#title a:active {
+  text-decoration: none;
+  color: hsl(0, 0%, 10%);
+}
+
+
+#nav{
+  display: flex;
+  justify-content: center; /* centers the nav list horizontally */
+  background-color: #f5f5f5; /* optional: background for nav bar */
+  padding: 1rem 0; /* optional: spacing inside the navbar */
+  border: 1px solid hsl(0, 1%, 71%);
+}
+
+
+
+#nav-list {
+  list-style: none; 
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  display: flex; 
+  gap: 2rem; 
+  padding: 0;
+  margin: 0;
+  color: hsl(0, 1%, 20%);
+  font-style: italic;
+  font-family: Arial, sans-serif;
+}
+
+#nav-list li a {
+  text-decoration: none;
+  color: hsl(0, 1%, 20%);
+  transition: color 0.3s ease;
+}
+
+#nav-list li a:hover {
+  color: hsl(0, 1%, 40%); 
+}
+

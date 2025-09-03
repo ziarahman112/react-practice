@@ -1,0 +1,28 @@
+
+
+function CreateAccount() {
+    return (
+<div>
+    <h1>Create Account</h1>
+    <form>
+        <label for="fname">First Name:</label><br/>
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name"/><br/><br />
+        <label for="lname">Last Name:</label><br/>
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name"/><br/><br />
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" placeholder="Enter Email"/><br/><br />
+        <label for="address">Address:</label><br />
+        <input type="text" id="address" name="address" placeholder="Enter Address"/><br/><br />
+        <label for="phoneNum">Phone number:</label><br />
+        <input type="tel" id="phoneNum" name="phoneNum" placeholder="Enter Phone number"/><br/><br />
+        <label for="password">Password:</label><br/>
+        <input type="password" id="password" name="password" placeholder="Enter Password"/><br/><br/>
+        <button id ="submit"> Submit</button>
+    </form>
+    <div>
+       <p> Already have an account login here</p> 
+        </div>
+</div>
+    )
+}
+export default CreateAccount;
