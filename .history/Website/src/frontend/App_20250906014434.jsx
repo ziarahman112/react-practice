@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Shower from './Shower/Shower';
@@ -18,14 +18,18 @@ import ComfortHeight from './Toilet/ComfortHeightToilet';
 import Flush from './Toilet/Flush';
 import CAccount from './user/CreateAccount';
 import Login from './user/Login';
-import AccountDetails from './user/AccountDetails';
 
 
 function App() {
+ const location = useLocation();
+
+  // pages where you don't want header/footer
+  const hideLayoutRoutes = ["/login", "/create-account"];
+
+  const shouldHideLayout = hideLayoutRoutes.includes(location.pathname);
 
   
 return (
-  
 <Router>
 <Header/> 
 <Routes>
@@ -47,7 +51,6 @@ return (
         <Route path="/toilet-flush" element={<Flush />} />
         <Route path="/create-account" element={<CAccount />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/account-details" element={<AccountDetails />} />
 
       </Routes>
       <Footer/>

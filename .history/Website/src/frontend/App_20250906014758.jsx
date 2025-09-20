@@ -18,10 +18,15 @@ import ComfortHeight from './Toilet/ComfortHeightToilet';
 import Flush from './Toilet/Flush';
 import CAccount from './user/CreateAccount';
 import Login from './user/Login';
-import AccountDetails from './user/AccountDetails';
 
 
 function App() {
+ const location = useLocation();
+
+  // pages where you don't want header/footer
+  const hideLayoutRoutes = ["/login", "/create-account"];
+
+  const shouldHideLayout = hideLayoutRoutes.includes(location.pathname);
 
   
 return (
@@ -47,7 +52,6 @@ return (
         <Route path="/toilet-flush" element={<Flush />} />
         <Route path="/create-account" element={<CAccount />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/account-details" element={<AccountDetails />} />
 
       </Routes>
       <Footer/>

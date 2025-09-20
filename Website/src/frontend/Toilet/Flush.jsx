@@ -16,7 +16,13 @@ function Flush () {
                                                        <p>£250</p>
                                                        <p className={styles.inStock}>✅In Stock</p>
                                                    </div>
-                                       
+                                          <div className={styles.toilet}>
+                                                       <img src={flush} alt="Flush Toilet" />
+                                                       <h2>Flush Toilet</h2>
+                                                       <p className={styles.rating}>5 ⭐⭐⭐⭐⭐ ratings</p>
+                                                       <p>£250</p>
+                                                       <p className={styles.inStock}>✅In Stock</p>
+                                                   </div>
                                      </div>
      
 

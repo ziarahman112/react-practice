@@ -123,17 +123,32 @@ let account = function(){
             Keep your bathroom warm with stylish radiators designed to complement modern and classic interiors.
         </p>
         <button className={styles.Button} onClick={Radiator}>Go To</button>
-
     </div>
 
 <div className={styles.contactCard}>
       <h2 className={styles.cardTitle}>Contact Us</h2>
 
-     
+      <div className={styles.cardContent}>
+        <p>
+          <span className={styles.label}>Email:</span>{" "}
+          <a href="mailto:Iqbalrahman333@yahoo.co.uk">
+            Iqbalrahman333@yahoo.co.uk
+          </a>
+        </p>
+        <p>
+          <span className={styles.label}>Phone:</span>{" "}
+          <a href="tel:07949777989">07949777989</a>
+        </p>
+        <p>
+          <span className={styles.label}>Address:</span>
+          <br />
+          94 Western Road, Southall, UB2 5DZ
+        </p>
       </div>
     </div>
 
 
+    </div>
 
 
         </header>

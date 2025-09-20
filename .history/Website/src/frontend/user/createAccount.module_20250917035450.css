@@ -12,15 +12,11 @@
   margin: auto;
   justify-content: space-between;
 }
-.details{
+details{
   display: flex;
   flex-direction: column;
   margin-left: auto;
   width: 300px;
   margin: auto;
   justify-content: space-between;
-}
-  #Tdetails{
-font-family:'Courier New', Courier, monospace;
-font-weight: bold;
 }

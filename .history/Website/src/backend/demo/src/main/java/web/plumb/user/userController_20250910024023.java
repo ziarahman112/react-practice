@@ -35,11 +35,6 @@ public class UserController {
                 return userService.getUser();
         }
 
-        @GetMapping("/{id}")
-        public UserModel getUserById(@PathVariable Long id) {
-                return userService.getUserById(id);
-        }
-
         @PostMapping
         public void addNewUser(@RequestBody UserModel user) {
                 userService.addNewUser(user);
@@ -60,7 +55,6 @@ public class UserController {
         public ResponseEntity<?> login(@RequestBody UserModel user) {
                 try {
                         UserModel loggedInUser = userService.login(user);
-                        System.out.println("Login successful for user: " + loggedInUser.getEmail());
                         return ResponseEntity.ok(loggedInUser);
                 } catch (Exception e) {
                         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");

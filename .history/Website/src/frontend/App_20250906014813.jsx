@@ -18,7 +18,6 @@ import ComfortHeight from './Toilet/ComfortHeightToilet';
 import Flush from './Toilet/Flush';
 import CAccount from './user/CreateAccount';
 import Login from './user/Login';
-import AccountDetails from './user/AccountDetails';
 
 
 function App() {
@@ -47,7 +46,6 @@ return (
         <Route path="/toilet-flush" element={<Flush />} />
         <Route path="/create-account" element={<CAccount />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/account-details" element={<AccountDetails />} />
 
       </Routes>
       <Footer/>
