@@ -9,9 +9,6 @@ function Header () {
     let account = function(){
         navigate('/login');
     }
-    let accountDetails = function(){
-        navigate('/account-details');
-    }
 
 return (
     <div >
@@ -24,15 +21,10 @@ return (
     <input id="input" type="text" placeholder="Search for products..." />
     <button id="Button">Search</button>
   </div>
-
   <h1 id="title"><a href="/">Plumbzone Bathrooms</a></h1>
 
-
-
 <button onClick={account} id = "accountB"> Login</button>
-<button onClick={accountDetails} id = "accountD"> Account Details</button>
 </div>
-
 
 
     <nav id = "nav">

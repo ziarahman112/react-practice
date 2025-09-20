@@ -35,11 +35,6 @@ public class UserController {
                 return userService.getUser();
         }
 
-        @GetMapping("/{id}")
-        public UserModel getUserById(@PathVariable Long id) {
-                return userService.getUserById(id);
-        }
-
         @PostMapping
         public void addNewUser(@RequestBody UserModel user) {
                 userService.addNewUser(user);

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Shower from './Shower/Shower';
@@ -18,17 +18,20 @@ import ComfortHeight from './Toilet/ComfortHeightToilet';
 import Flush from './Toilet/Flush';
 import CAccount from './user/CreateAccount';
 import Login from './user/Login';
-import AccountDetails from './user/AccountDetails';
 
+function AppLayout() {
+  const location = useLocation();
 
-function App() {
+  // routes where the Header should be hidden
+  const hideHeaderRoutes = ["/login", "/create-account"];
 
-  
-return (
-  
-<Router>
-<Header/> 
-<Routes>
+  const shouldHideHeader = hideHeaderRoutes.includes(location.pathname);
+
+  return (
+    <>
+      {!shouldHideHeader && <Header />}
+
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sinks" element={<Sinks />} />
         <Route path="/Shower" element={<Shower />} />
@@ -42,19 +45,23 @@ return (
         <Route path="/vanity" element={<Vanity />} />
         <Route path="/back-to-wall" element={<BackToWall />} />
         <Route path="/bidet" element={<Bidet />} />
-        <Route path="/close-coupled" element={<CloseCoupled />} />
         <Route path="/comfort-height" element={<ComfortHeight />} />
         <Route path="/toilet-flush" element={<Flush />} />
         <Route path="/create-account" element={<CAccount />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/account-details" element={<AccountDetails />} />
-
       </Routes>
-      <Footer/>
 
-</Router>
-
-)
+      <Footer />
+    </>
+  );
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <AppLayout />
+    </Router>
+  );
+}
+
+export default App;

@@ -30,9 +30,8 @@ return (
 
 
 <button onClick={account} id = "accountB"> Login</button>
-<button onClick={accountDetails} id = "accountD"> Account Details</button>
 </div>
-
+<button onClick={accountDetails} id = "accountB"> Account Details</button>
 
 
     <nav id = "nav">
